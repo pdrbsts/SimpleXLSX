@@ -2,6 +2,7 @@
 Basic library to create simple Microsoft Excel XLSX files
 
  **Usage**
+ ```
 procedure TForm1.Button1Click(Sender: TObject);
 var
   XLS: TSimpleExcel;
@@ -15,5 +16,6 @@ begin
     XLS.SaveToFile('teste');
   finally
     XLS.Free;
-end;
+  end;
 end;	
+```
