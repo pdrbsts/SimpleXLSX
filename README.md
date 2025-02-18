@@ -1,19 +1,19 @@
-## SimpleXLSX
+# SimpleXLSX
 Basic library to create simple Microsoft Excel XLSX files
 
-#Sample
+ **Usage**
 procedure TForm1.Button1Click(Sender: TObject);
 var
   XLS: TSimpleExcel;
 begin
-  XLS := TSimpleExcel.Create; // Correct way to create the object
+  XLS := TSimpleExcel.Create;
   try
-    XLS.AddData(1, 1, 'Teste1');
-    XLS.AddData(1, 2, 'Teste2');
-    XLS.AddData(2, 1, 'Valor1');
-    XLS.AddData(2, 2, 'Valor2');
+    XLS.AddData(1, 1, 'Test1');
+    XLS.AddData(1, 2, 'Test2');
+    XLS.AddData(2, 1, 'Value1');
+    XLS.AddData(2, 2, 'Value2');
     XLS.SaveToFile('teste');
   finally
-    XLS.Free; // Ensure the object is freed to avoid memory leaks
-  end;
+    XLS.Free;
 end;
+end;	
